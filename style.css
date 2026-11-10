@@ -1,0 +1,38 @@
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+  #invoiceModal,
+  #invoiceModal * {
+    visibility: visible !important;
+  }
+  #invoiceModal {
+    position: fixed;
+    inset: 0;
+    background: #fff !important;
+    color: #111 !important;
+    z-index: 99999;
+    padding: 2.5rem;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.3);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.6);
+}
